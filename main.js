@@ -39,7 +39,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _credits_credits_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./credits/credits.component */ "./src/app/credits/credits.component.ts");
 /* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/landing/landing.component.ts");
 /* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blog/blog.component */ "./src/app/blog/blog.component.ts");
-/* harmony import */ var _forum_forum_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./forum/forum.component */ "./src/app/forum/forum.component.ts");
+/* harmony import */ var _blogslist_blogslist_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blogslist/blogslist.component */ "./src/app/blogslist/blogslist.component.ts");
+/* harmony import */ var _forum_forum_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./forum/forum.component */ "./src/app/forum/forum.component.ts");
+/* harmony import */ var _interactive_stories_interactive_stories_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./interactive-stories/interactive-stories.component */ "./src/app/interactive-stories/interactive-stories.component.ts");
+
+
 
 
 
@@ -50,9 +54,11 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     { path: '', redirectTo: '/landing', pathMatch: 'full' },
     { path: 'landing', component: _landing_landing_component__WEBPACK_IMPORTED_MODULE_4__["LandingComponent"] },
-    { path: 'credits', component: _credits_credits_component__WEBPACK_IMPORTED_MODULE_3__["CreditsComponent"] },
     { path: 'blog', component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_5__["BlogComponent"] },
-    { path: 'forum', component: _forum_forum_component__WEBPACK_IMPORTED_MODULE_6__["ForumComponent"] },
+    { path: 'blogslist', component: _blogslist_blogslist_component__WEBPACK_IMPORTED_MODULE_6__["BlogslistComponent"] },
+    { path: 'forum', component: _forum_forum_component__WEBPACK_IMPORTED_MODULE_7__["ForumComponent"] },
+    { path: 'story', component: _interactive_stories_interactive_stories_component__WEBPACK_IMPORTED_MODULE_8__["InteractiveStoriesComponent"] },
+    { path: 'credits', component: _credits_credits_component__WEBPACK_IMPORTED_MODULE_3__["CreditsComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -88,7 +94,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- header -->\n<div class=\"jumbotron text-center\" style=\"background-image: url('assets/art-board-game-challenge-163064.jpg'); background-size: cover; margin-bottom: 0;\">\n  <h1>Welcome to My Planet</h1>\n  <p>where you network with others for business in North Carolina!</p>\n</div>\n<!-- Navigation -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Home(主页)</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/blog\">Blogs(博客)</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/forum\">Forum(论坛)</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/credits\">Credits(特别感谢)</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<!-- Main -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\n  <p>© 2019 Dees World Planet All Copyrights Reserved</p>\n</div>\n"
+module.exports = "<!-- header -->\n<div class=\"jumbotron text-center\" style=\"background-image: url('assets/art-board-game-challenge-163064.jpg'); background-size: cover; margin-bottom: 0;\">\n  <h1>Welcome to My Planet</h1>\n  <p>where you network with others for business in North Carolina!</p>\n</div>\n<!-- Navigation -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <a class=\"navbar-brand\" href=\"#\">Home(主页)</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/forum\">Forum(论坛)</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/blog\">Blogs(博客)</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/story\">Interactive Stories(文字交互式故事)</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLink=\"/credits\">Credits(特别感谢)</a>\n      </li>\n    </ul>\n  </div>\n</nav>\n<!-- Main -->\n<router-outlet></router-outlet>\n<!-- Footer -->\n<div class=\"jumbotron text-center\" style=\"margin-bottom:0\">\n  <p>© 2019 Dees World Planet All Copyrights Reserved</p>\n</div>\n"
 
 /***/ }),
 
@@ -143,6 +149,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _landing_landing_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./landing/landing.component */ "./src/app/landing/landing.component.ts");
 /* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blog/blog.component */ "./src/app/blog/blog.component.ts");
 /* harmony import */ var _forum_forum_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./forum/forum.component */ "./src/app/forum/forum.component.ts");
+/* harmony import */ var _blogslist_blogslist_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blogslist/blogslist.component */ "./src/app/blogslist/blogslist.component.ts");
+/* harmony import */ var _interactive_stories_interactive_stories_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./interactive-stories/interactive-stories.component */ "./src/app/interactive-stories/interactive-stories.component.ts");
+
+
 
 
 
@@ -162,7 +172,9 @@ var AppModule = /** @class */ (function () {
                 _credits_credits_component__WEBPACK_IMPORTED_MODULE_5__["CreditsComponent"],
                 _landing_landing_component__WEBPACK_IMPORTED_MODULE_6__["LandingComponent"],
                 _blog_blog_component__WEBPACK_IMPORTED_MODULE_7__["BlogComponent"],
-                _forum_forum_component__WEBPACK_IMPORTED_MODULE_8__["ForumComponent"]
+                _blogslist_blogslist_component__WEBPACK_IMPORTED_MODULE_9__["BlogslistComponent"],
+                _forum_forum_component__WEBPACK_IMPORTED_MODULE_8__["ForumComponent"],
+                _interactive_stories_interactive_stories_component__WEBPACK_IMPORTED_MODULE_10__["InteractiveStoriesComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -174,7 +186,9 @@ var AppModule = /** @class */ (function () {
                 _credits_credits_component__WEBPACK_IMPORTED_MODULE_5__["CreditsComponent"],
                 _landing_landing_component__WEBPACK_IMPORTED_MODULE_6__["LandingComponent"],
                 _blog_blog_component__WEBPACK_IMPORTED_MODULE_7__["BlogComponent"],
-                _forum_forum_component__WEBPACK_IMPORTED_MODULE_8__["ForumComponent"]
+                _blogslist_blogslist_component__WEBPACK_IMPORTED_MODULE_9__["BlogslistComponent"],
+                _forum_forum_component__WEBPACK_IMPORTED_MODULE_8__["ForumComponent"],
+                _interactive_stories_interactive_stories_component__WEBPACK_IMPORTED_MODULE_10__["InteractiveStoriesComponent"]
             ]
         })
     ], AppModule);
@@ -235,6 +249,62 @@ var BlogComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], BlogComponent);
     return BlogComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/blogslist/blogslist.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/blogslist/blogslist.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Jsb2dzbGlzdC9ibG9nc2xpc3QuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/blogslist/blogslist.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/blogslist/blogslist.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  blogslist works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/blogslist/blogslist.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/blogslist/blogslist.component.ts ***!
+  \**************************************************/
+/*! exports provided: BlogslistComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlogslistComponent", function() { return BlogslistComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BlogslistComponent = /** @class */ (function () {
+    function BlogslistComponent() {
+    }
+    BlogslistComponent.prototype.ngOnInit = function () {
+    };
+    BlogslistComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-blogslist',
+            template: __webpack_require__(/*! ./blogslist.component.html */ "./src/app/blogslist/blogslist.component.html"),
+            styles: [__webpack_require__(/*! ./blogslist.component.css */ "./src/app/blogslist/blogslist.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], BlogslistComponent);
+    return BlogslistComponent;
 }());
 
 
@@ -315,7 +385,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<a id=\"nabblelink\" href=\"http://sale-between-us.128807.n8.nabble.com/\">Sale Between Us</a>\n<script src=\"http://sale-between-us.128807.n8.nabble.com/embed/f1\"></script>\n"
+module.exports = "<h2>The Forum Entry(论坛入口)</h2>\n<p>Here is the entry to the forum where people do used items sales.</p>\n<p>下面的链接是我建的论坛，用来给大伙交易二手商品。</p>\n<!-- The actual forum URL link here -->\n<a id=\"nabblelink\" href=\"http://sale-between-us.128807.n8.nabble.com/\">Sale Between Us</a>\n<script src=\"http://sale-between-us.128807.n8.nabble.com/embed/f1\"></script>\n"
 
 /***/ }),
 
@@ -353,6 +423,62 @@ var ForumComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/interactive-stories/interactive-stories.component.css":
+/*!***********************************************************************!*\
+  !*** ./src/app/interactive-stories/interactive-stories.component.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ludGVyYWN0aXZlLXN0b3JpZXMvaW50ZXJhY3RpdmUtc3Rvcmllcy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/interactive-stories/interactive-stories.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/interactive-stories/interactive-stories.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>List of My Interactive Stories</h2>\n<hr>\n<ul class=\"nav nav-pills flex-column\">\n  <li class=\"nav-item\">\n    <a href=\"assets/LoversHorror.html\" target=\"_blank\">Lover Horror</a>\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "./src/app/interactive-stories/interactive-stories.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/interactive-stories/interactive-stories.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: InteractiveStoriesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InteractiveStoriesComponent", function() { return InteractiveStoriesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var InteractiveStoriesComponent = /** @class */ (function () {
+    function InteractiveStoriesComponent() {
+    }
+    InteractiveStoriesComponent.prototype.ngOnInit = function () {
+    };
+    InteractiveStoriesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-interactive-stories',
+            template: __webpack_require__(/*! ./interactive-stories.component.html */ "./src/app/interactive-stories/interactive-stories.component.html"),
+            styles: [__webpack_require__(/*! ./interactive-stories.component.css */ "./src/app/interactive-stories/interactive-stories.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], InteractiveStoriesComponent);
+    return InteractiveStoriesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/landing/landing.component.css":
 /*!***********************************************!*\
   !*** ./src/app/landing/landing.component.css ***!
@@ -371,7 +497,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" style=\"margin-top:30px\">\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <h2>About Me</h2>\n      <h5>Photo of me:</h5>\n      <img src=\"assets/bird_a.jpeg\" alt=\"bird A\" height=\"300\" width=\"300\">\n      <p>What's up, guys! I'm Dee, the author and the owner of the site. Hopefully, the site I created can help local\n        individuals and organizations in North Carolina boost their business.</p>\n\n      <h3>Some Links</h3>\n      <p>Maybe introduction for the links below</p>\n      <ul class=\"nav nav-pills flex-column\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link active\" href=\"#\">Active</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n        </li>\n      </ul>\n      <hr class=\"d-sm-none\">\n    </div>\n    <div class=\"col-sm-8\">\n      <h2>TITLE HEADING</h2>\n      <h5>Title description, Dec 7, 2017</h5>\n      <div class=\"fakeimg\">Fake Image</div>\n      <p>Some text..</p>\n      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>\n      <br>\n      <h2>TITLE HEADING</h2>\n      <h5>Title description, Sep 2, 2017</h5>\n      <div class=\"fakeimg\">Fake Image</div>\n      <p>Some text..</p>\n      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\" style=\"margin-top:30px\">\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <h2>About Me</h2>\n      <h5>Photo of me:</h5>\n      <img src=\"assets/bird_a.jpeg\" alt=\"bird A\" height=\"300\" width=\"300\">\n      <p>What's up, guys! I'm Dee, the author and the owner of the site. Hopefully, the site I created can help local\n        individuals and organizations in North Carolina boost their business.</p>\n      <!--\n      <h3>Some Links</h3>\n      <p>Maybe introduction for the links below</p>\n      <ul class=\"nav nav-pills flex-column\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link active\" href=\"#\">Active</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#\">Link</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n        </li>\n      </ul>\n      <hr class=\"d-sm-none\">\n      -->\n    </div>\n    <div class=\"col-sm-8\">\n      <h2>What this site has right now?</h2>\n      <p>For now, there are only three sections that exist in this site.</p>\n      <!-- Section 1 -->\n      <h5>Section 1: Forum</h5>\n      <p>This is the place where local individuals do used items tradings.</p>\n      <!-- Section 2 -->\n      <h5>Section 2: Blogs</h5>\n      <p>I haven't decided what contents of blogs should be. If you guys have ideas about things you want to know or\n        learn, then let me know. </p>\n      <!-- Section 3 -->\n      <h5>Section 3: Interactive Stories</h5>\n      <p>These stories are made using Twine, which is a tool that I use to make my stories. Hope you guys find them\n        interesting.</p>\n    </div>\n    <!--\n    <div class=\"col-sm-8\">\n      <h2>TITLE HEADING</h2>\n      <h5>Title description, Dec 7, 2017</h5>\n      <div class=\"fakeimg\">Fake Image</div>\n      <p>Some text..</p>\n      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>\n      <br>\n      <h2>TITLE HEADING</h2>\n      <h5>Title description, Sep 2, 2017</h5>\n      <div class=\"fakeimg\">Fake Image</div>\n      <p>Some text..</p>\n      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>\n    </div>\n    -->\n  </div>\n</div>\n"
 
 /***/ }),
 
